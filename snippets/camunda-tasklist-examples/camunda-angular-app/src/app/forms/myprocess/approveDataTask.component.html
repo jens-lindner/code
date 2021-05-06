@@ -3,17 +3,17 @@
     <h1>Approve Task</h1>
     <form (ngSubmit)="onSubmit()" (ngModelChange)="changedExtraHandler($event)" #approveDataTask="ngForm" class="ui form">
       <div class="field">
-        <label for="firstName">First Name</label>
-        <input type="text" id="firstName"
+        <label for="processVar1">Process Var 1</label>
+        <input type="text" id="processVar1"
                required
-               [(ngModel)]="model.firstName" name="firstName"
+               [(ngModel)]="model.processVar1" name="processVar1"
                #name="ngModel">
       </div>
 
       <div class="field">
-        <label for="lastName">Last Name</label>
-        <input type="text" id="lastName"
-               [(ngModel)]="model.lastName" name="lastName" #name="ngModel">
+        <label for="processVar2">Process Var 2</label>
+        <input type="text" id="processVar2"
+               [(ngModel)]="model.processVar2" name="processVar2" #name="ngModel">
       </div>
 
       <div class="field">

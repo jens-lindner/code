@@ -1,8 +1,8 @@
 export class MyProcessData {
 
   constructor(
-    public firstName: string,
-    public lastName: string,
+    public processVar1: string,
+    public processVar2: string,
     public approved: boolean
   ) {  }
 
