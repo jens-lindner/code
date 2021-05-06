@@ -19,8 +19,8 @@ export class CamundaRestService {
   }
 
   getTasks(): Observable<Task[]> {
-    const endpoint = `${this.engineRestUrl}task?sortBy=created&sortOrder=desc&maxResults=10`;
-    // const endpoint = `/pizza-task-list`;
+    // const endpoint = `${this.engineRestUrl}task?sortBy=created&sortOrder=desc&maxResults=10`;
+    const endpoint = 'http://localhost:8080/pizza-task-list';
     return this.http.get<any>(endpoint).pipe(
       tap(form => this.log(`fetched tasks`)),
       catchError(this.handleError('getTasks', []))

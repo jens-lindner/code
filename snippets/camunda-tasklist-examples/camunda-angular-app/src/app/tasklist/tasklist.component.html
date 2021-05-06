@@ -2,7 +2,7 @@
   <div class="six wide column">
     <ul class="tasks">
       <li *ngFor="let task of tasks">
-        <p><a routerLink="/tasklist/{{task.id}}">{{task.name}}</a></p>
+        <p><a routerLink="/tasklist/{{task.id}}">{{task.taskName}} - {{task.businessData1}} - {{task.businessData2}}</a></p>
       </li>
     </ul>
   </div>

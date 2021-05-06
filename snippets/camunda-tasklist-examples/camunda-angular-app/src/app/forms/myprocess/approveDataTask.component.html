@@ -2,28 +2,9 @@
   <div [hidden]="submitted">
     <h1>Approve Task</h1>
     <form (ngSubmit)="onSubmit()" (ngModelChange)="changedExtraHandler($event)" #approveDataTask="ngForm" class="ui form">
-      <div class="field">
-        <label for="processVar1">Process Var 1</label>
-        <input type="text" id="processVar1"
-               required
-               [(ngModel)]="model.processVar1" name="processVar1"
-               #name="ngModel">
-      </div>
 
       <div class="field">
-        <label for="processVar2">Process Var 2</label>
-        <input type="text" id="processVar2"
-               [(ngModel)]="model.processVar2" name="processVar2" #name="ngModel">
-      </div>
-
-      <div class="field">
-        <label for="approved">Approve?</label>
-        <input type="checkbox" id="approved"
-               [(ngModel)]="model.approved" name="approved" #name="ngModel">
-      </div>
-
-      <div class="field">
-        <button type="submit" class="ui button" [disabled]="!approveDataTask.form.valid">Complete</button>
+        <button type="submit" class="ui button">Complete</button>
       </div>
     </form>
   </div>
